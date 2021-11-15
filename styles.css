@@ -1,0 +1,188 @@
+/* for responsive webpage to size to mobile phones, tablets and pc*/
+
+html, body {
+	margin-inline:  auto;
+/*	width: min(90% 70.5rem); */
+	margin: 0;
+	padding: 0;
+}
+
+/* general settings for web page wording and readable */
+body {
+	font-weight:  400;
+/*	font-size: 1.3125rem; = good for overall layout and consistent in wording look */
+	line-height: 1.6;
+}
+
+header {
+	background-color: #FFFFFF;
+}
+
+
+h1, h2 {
+	font-family: 'Gelasio', serif;
+	font-weight: 900;
+/*	margin-bottom: 1em;  */
+}
+
+h1 {
+	font-size: 60px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+header, figure {
+	padding:  3rem 0;
+}
+
+
+.text-center {
+	text-align: center;
+}
+
+#title {
+	background-color: #000;
+	color: #FFF;
+}
+
+
+#title-description {
+	font-size: 1.8rem;
+}
+
+
+
+#img-div {
+	justify-content: center;
+	align-items: center;
+}
+
+
+/* works well with mobile phone, laptop and desktop. not good on tablets for multi images in a image grid*/
+#image {
+	display: block;
+	max-width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+#img-caption {
+	font-style: italic;
+	text-align: center;
+}
+
+#tribute-info {
+	background-color: black;
+	color:  white;
+	text-align:  center;
+	padding: 50px;
+/*	font-size: 1.15em; */
+	font-size: 1.3125rem; 
+
+}
+
+
+#info-credit {
+	font-size: 1rem;
+}
+
+
+.container-bottom {
+	background-color: white;
+	padding:  3rem 0;
+}
+
+
+/* blockquote for quotes design and settings */
+
+.blockquote {
+	max-width:  600px;
+	margin: 40px 25px;
+	padding: 25px;
+	color: black;
+	box-sizing: border-box;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.blockquote-quoted::before {
+	content: "\201c";
+	font-size:  100px;
+	display:  block;
+	margin-bottom: -40px;
+	margin-top: -20px;
+	margin-right: 600px;
+
+}
+
+
+
+.blockquote-text {
+	font-family: 'Gelasio', serif;
+	font-style: italic;
+	font-size: 1.3125rem;
+	line-height: 1.5;
+	margin: 0;
+	text-align: left;
+}
+
+.blockquote-text:not(:last-child) {
+	margin-bottom: 1em;
+}
+
+.blockquote-credit {
+	font-size: 1.3125rem;
+	font-weight: bold;
+	font-style: normal;
+	text-align: right;
+}
+	
+.blockquote-credit::before {
+	content: "\2014\0020"
+}
+ 
+
+#tribute-link {
+	color:  blue;
+}
+
+#tribute-link-section {
+	font-size: 1.3125rem;
+}
+
